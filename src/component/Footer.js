@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
 	background-color: rgb(15, 15, 50);
-	min-height: 200px;
-    padding: 2rem 0;
+	/* min-height: 200px; */
+    padding: 2rem;
 `;
 
 const Copyright = styled.p`

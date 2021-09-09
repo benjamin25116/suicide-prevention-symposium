@@ -44,6 +44,7 @@ const FirstLine = styled.span`
 const SecondLine = styled.span`
 	font-weight: lighter;
 	font-style: italic;
+	font-size: 1.2rem;
 	color: ${(props) => (props.reverse ? "white" : "rgb(50, 50, 50)")};
 	text-align: center;
 	margin-bottom: 0.4rem;
@@ -53,6 +54,7 @@ const ThirdLine = styled.span`
 	padding-right: 0.35rem;
 	font-weight: lighter;
 	font-style: italic;
+	font-size: 1.2rem;
 	color: ${(props) => (props.reverse ? "white" : "rgb(50, 50, 50)")};
 	margin-bottom: 0.4rem;
 	text-align: center;
