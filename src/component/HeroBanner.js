@@ -68,17 +68,26 @@ const Button = styled.a`
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  color: darkblue;
-  box-shadow: 0px 5px 5px black;
+  color: rgb(5, 0, 50);
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
 `;
 
 const extraMarginBottom = {
   marginBottom: "3rem",
 };
 
+const Wrapper = styled.div`
+@media(min-width: 768px){
+    max-width: 700px;
+    margin: 0 auto;
+}
+`
+
 function HomeBanner() {
   return (
     <Banner>
+      <Wrapper>
+
       <Heading>
         Suicide:
         <br />
@@ -98,6 +107,7 @@ function HomeBanner() {
         <Perkama src={perkama} alt="PERKAMA logo" />
       </LogoContainer>
       <Button href="">Register now</Button>
+      </Wrapper>
     </Banner>
   );
 }

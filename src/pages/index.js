@@ -11,12 +11,16 @@ import Objectives from "../component/Objectives";
 
 // styles
 
-const Description = styled.p``;
+const Description = styled.p`
+padding-bottom: 1rem;
+`;
 
 const DescriptionContainer = styled.section`
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+
+ 
 `;
 
 // markup
@@ -48,6 +52,8 @@ const IndexPage = () => {
       <Schedule />
 
       <Objectives />
+
+      
     </main>
   );
 };

@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const ButtonDown = styled.a`
   display: block;
-  color: ${(props) => (props.primary ? "darkblue" : "white")};
+  color: ${(props) => (props.primary ? "rgb(5, 0, 50)" : "white")};
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-size: 1rem;
@@ -45,7 +45,7 @@ class Drawer extends React.Component {
     let content;
     if (typeof this.props.children === "object") {
       content = this.props.children.map((paragraph) => {
-        return <p>{paragraph}</p>;
+        return <p key={paragraph.length}>{paragraph}</p>;
       });
     }
 
