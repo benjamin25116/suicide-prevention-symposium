@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.section`
+	background: #f9f4f1;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 3rem;
@@ -10,7 +11,7 @@ const Container = styled.section`
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	max-width: 768px;
+	/* max-width: 768px; */
 	margin: 0 auto;
 `;
 
@@ -33,15 +34,16 @@ const InnerContainer = styled.div`
 `;
 
 const Card = styled.article`
-	background-color: ${(props) => (props.reverse ? null : "white")};
-	background-image: ${(props) =>
-		props.reverse ? "linear-gradient(to bottom, rgb(30,30, 100), rgb(10,10,10))" : null};
+	/* background-color: ${(props) => (props.reverse ? null : "white")}; */
+	/* background-image: ${(props) =>
+		props.reverse ? "linear-gradient(to bottom, rgb(30,30, 100), rgb(10,10,10))" : null}; */
 
-	color: ${(props) => (props.reverse ? "white" : null)};
+	/* color: ${(props) => (props.reverse ? "white" : null)}; */
 
+	background-color: white;	
 	padding: 2rem;
-	border-radius: 1rem;
-	border: 3px solid rgb(5, 0, 50);
+	/* border-radius: 1rem;
+	border: 3px solid rgb(5, 0, 50); */
 	margin-bottom: 2rem;
 	line-height: 1.25rem;
 	max-width: 13rem;

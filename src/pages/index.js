@@ -12,18 +12,24 @@ import Footer from "../component/Footer"
 
 // styles
 
+const DescriptionContainer = styled.section`
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+`;
+
+const Headline = styled.h2`
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 2rem;
+text-align: center;
+`
+
 const Description = styled.p`
 margin-bottom: 1rem;
 line-height: 1.5rem;
 `;
 
-const DescriptionContainer = styled.section`
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-
- 
-`;
 
 // markup
 const IndexPage = () => {
@@ -33,6 +39,7 @@ const IndexPage = () => {
       <BaseStyle />
       <HeroBanner />
       <DescriptionContainer>
+        <Headline>A Suicide Prevention Symposium</Headline>
         <Description>
           This symposium will gather researchers, clinicians, public health
           professionals, leaders and peers to discuss strengthening our work

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../images/hero-background.png";
+import image from "../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg";
 import dignity from "../images/logo/dignity-logo.png";
 import masw from "../images/logo/masw-logo.png";
 import perkama from "../images/logo/perkama-logo.png";
@@ -10,63 +10,66 @@ const Banner = styled.section`
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
+	height: 100vh;
 	padding: 2rem;
 	margin-bottom: 2rem;
-	box-shadow: 0px 3px 25px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	@media (min-width: 768px) {
 		height: 100vh;
-		max-height: 500px;
+		/* max-height: 500px; */
 	}
 `;
 
 const Wrapper = styled.div`
+	width: 100vw;
 	@media (min-width: 768px) {
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
-		width: 100vw;
+		justify-content: space-evenly; */
+		height: 80vh;
 		max-width: 700px;
-		margin: 0 auto;
-		height: 100%;
 	}
 `;
 
 const Heading = styled.h1`
 	color: white;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 3rem;
+	line-height: 4rem;
 	margin-bottom: 2rem;
 `;
 
 const SubHeading = styled.p`
 	color: white;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: bold;
-	line-height: 1.25rem;
+	line-height: 2rem;
 	margin-bottom: 1rem;
 	max-width: 400px;
 `;
 
 const Emphasis = styled.span`
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-weight: 100;
 `;
 
 const Dignity = styled.img`
-	height: 20px;
+	height: 25px;
 	padding-right: 1rem;
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.5rem;
 `;
 const Masw = styled.img`
-	height: 35px;
+	height: 45px;
 	padding-right: 1rem;
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.5rem;
 `;
 const Perkama = styled.img`
-	height: 30px;
-	margin-bottom: 0.25rem;
+	height: 50px;
+	margin-bottom: 0.5rem;
 `;
 
 const LogoContainer = styled.div`
@@ -79,11 +82,13 @@ const LogoContainer = styled.div`
 
 const Button = styled.a`
 	display: block;
-  max-width: 9rem;
-  padding: 1rem 3rem;
+	max-width: 18rem;
+	padding: 1rem 3rem;
 	border-radius: 2rem;
 	background-color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: bold;
+	font-size: 1.25rem;
 	text-decoration: none;
 	text-align: center;
 	color: rgb(5, 0, 50);
@@ -91,7 +96,7 @@ const Button = styled.a`
 `;
 
 const extraMarginBottom = {
-	marginBottom: "3rem",
+	marginBottom: "5rem",
 };
 
 function HomeBanner() {

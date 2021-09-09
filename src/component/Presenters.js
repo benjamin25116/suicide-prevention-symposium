@@ -86,16 +86,29 @@ const data = [
 	},
 ];
 
-const Container = styled.section`
-	padding-left: 2rem;
-	padding-right: 2rem;
+const Background = styled.div`
+	background-color: #e3e0de;
+	width: 100vw;
 	padding-top: 3rem;
-	border-top: 4px solid rgb(5, 0, 50);
 	display: flex;
-	flex-flow: column;
 	align-items: center;
-	max-width: 768px;
-	margin: 0 auto;
+	flex-flow: column;
+	`;
+
+const Container = styled.section`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* border: 1px solid green; */
+	@media (max-width: 767px) {
+		max-width: 350px;
+	}
+	@media (min-width: 768px) {
+		max-width: 700px;
+	}
+	@media (min-width: 1366px) {
+		max-width: 1366px;
+	}
 `;
 
 const Heading = styled.h2`
@@ -109,25 +122,25 @@ const Heading = styled.h2`
 	border-bottom: 4px solid rgb(5, 0, 50);
 `;
 
-
 function Presenters() {
 	return (
-		<Container>
+		<Background>
 			<Heading>Presenters</Heading>
-			{data.map((speaker) => {
-				return (
-					<Profile
-						key={speaker.name}
-						src={speaker.src}
-						firstLine={speaker.name}
-						secondLine={speaker.role}
-						thirdLine={speaker.title}
-						drawer={speaker.biodata}
-						
-					/>
-				);
-			})}
-		</Container>
+			<Container>
+				{data.map((speaker) => {
+					return (
+						<Profile
+							key={speaker.name}
+							src={speaker.src}
+							firstLine={speaker.name}
+							secondLine={speaker.role}
+							thirdLine={speaker.title}
+							bio={speaker.biodata}
+						/>
+					);
+				})}
+			</Container>
+		</Background>
 	);
 }
 
