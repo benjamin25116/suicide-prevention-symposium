@@ -90,10 +90,12 @@ const Container = styled.section`
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 3rem;
-	border: 4px solid rgb(5, 0, 50);
+	border-top: 4px solid rgb(5, 0, 50);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	max-width: 768px;
+	margin: 0 auto;
 `;
 
 const Heading = styled.h2`

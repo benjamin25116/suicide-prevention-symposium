@@ -4,12 +4,13 @@ import styled from "styled-components";
 import Profile from "./Profile";
 
 const Container = styled.section`
-	background-image: linear-gradient(to bottom, rgb(5, 0, 50), black);
-	padding: 2rem;
+	background-image: linear-gradient(to bottom, rgb(30,30, 100), rgb(10,10,10));
+	padding: 4rem 2rem 2rem;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	box-shadow: 0px 3px 25px black;
 `;
 
 const Heading = styled.h2`

@@ -7,9 +7,10 @@ const Container = styled.article`
 	flex-flow: column;
 	align-items: center;
 	margin-bottom: 2rem;
-	border-bottom: ${(props) => (props.reverse ? "unset" : "1px solid rgb(220, 220, 220)")};
+	border-bottom: ${(props) =>
+		props.reverse ? "unset" : "1px solid rgb(220, 220, 220)"};
 
-	@media(min-width: 768px){
+	@media (min-width: 768px) {
 		max-width: 700px;
 		margin: 0 auto 2rem;
 	}
@@ -26,10 +27,10 @@ const Pic = styled.img`
 	max-width: 250px;
 	margin-bottom: 1rem;
 
-	@media(min-width: 768px){
-    width: 25vw;
-	height: 25vw;
-}
+	@media (min-width: 768px) {
+		width: 200px;
+		height: 200px;
+	}
 `;
 
 const FirstLine = styled.span`
@@ -79,9 +80,11 @@ const ButtonWrapper = styled.div`
 const Drawer = styled.div`
 	& p {
 		color: ${(props) => (props.reverse ? "white" : "rgb(50, 50, 50)")};
+		margin-bottom: 1rem;
+		line-height: 1.5rem;
 	}
 
-	@media(min-width: 768px){
+	@media (min-width: 768px) {
 		max-width: 700px;
 		margin: 0 auto;
 	}
@@ -102,7 +105,6 @@ class Profile extends React.Component {
 	};
 
 	render() {
-		
 		// Wrapping the write up in paragraph tags.
 		let content;
 		if (typeof this.props.drawer === "object") {
@@ -111,13 +113,12 @@ class Profile extends React.Component {
 			});
 		}
 		if (typeof this.props.drawer === "string") {
-			content = <p>{this.props.drawer}</p>
+			content = <p>{this.props.drawer}</p>;
 		}
 
-
-		// Conditional rendering of drawer toggle button 
+		// Conditional rendering of drawer toggle button
 		let reverseButton;
-		if (this.props.drawer){
+		if (this.props.drawer) {
 			reverseButton = this.state.isOpen ? (
 				<ButtonUp reverse onClick={this.handleClick}>
 					▼
@@ -126,22 +127,17 @@ class Profile extends React.Component {
 				<ButtonDown reverse onClick={this.handleClick}>
 					▼
 				</ButtonDown>
-			)
+			);
 		}
-		
+
 		let button;
-		if (this.props.drawer){
+		if (this.props.drawer) {
 			button = this.state.isOpen ? (
-				<ButtonUp  onClick={this.handleClick}>
-					▼
-				</ButtonUp>
+				<ButtonUp onClick={this.handleClick}>▼</ButtonUp>
 			) : (
-				<ButtonDown  onClick={this.handleClick}>
-					▼
-				</ButtonDown>
-			)
+				<ButtonDown onClick={this.handleClick}>▼</ButtonDown>
+			);
 		}
-		
 
 		// Conditional rendering of Profile component for "reverse" prop
 		if (this.props.reverse) {
@@ -156,7 +152,7 @@ class Profile extends React.Component {
 					)}
 					<ButtonWrapper>
 						<ThirdLine reverse>{this.props.thirdLine}</ThirdLine>
-						{ this.state.isOpen ? null : reverseButton}
+						{this.state.isOpen ? null : reverseButton}
 					</ButtonWrapper>
 					{this.state.isOpen && (
 						/*
@@ -183,7 +179,9 @@ class Profile extends React.Component {
 			<Container key={this.props.firstLine}>
 				{this.props.src && <Pic src={this.props.src} alt={this.props.name} />}
 				{this.props.firstLine && <FirstLine>{this.props.firstLine}</FirstLine>}
-				{this.props.secondLine && <SecondLine>{this.props.secondLine}</SecondLine>}
+				{this.props.secondLine && (
+					<SecondLine>{this.props.secondLine}</SecondLine>
+				)}
 				<ButtonWrapper>
 					<ThirdLine>{this.props.thirdLine}</ThirdLine>
 					{this.state.isOpen ? null : button}

@@ -5,10 +5,13 @@ const Container = styled.section`
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 3rem;
-	border: 4px solid rgb(5, 0, 50);
+	padding-bottom: 2rem;
+	/* border-bottom: 4px solid rgb(5, 0, 50); */
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	max-width: 768px;
+	margin: 0 auto;
 `;
 
 const Heading = styled.h2`
@@ -32,7 +35,7 @@ const InnerContainer = styled.div`
 const Card = styled.article`
 	background-color: ${(props) => (props.reverse ? null : "white")};
 	background-image: ${(props) =>
-		props.reverse ? "linear-gradient(to bottom, rgb(5, 0, 50), black)" : null};
+		props.reverse ? "linear-gradient(to bottom, rgb(30,30, 100), rgb(10,10,10))" : null};
 
 	color: ${(props) => (props.reverse ? "white" : null)};
 
@@ -41,7 +44,6 @@ const Card = styled.article`
 	border: 3px solid rgb(5, 0, 50);
 	margin-bottom: 2rem;
 	line-height: 1.25rem;
-
 	max-width: 13rem;
 `;
 

@@ -8,11 +8,13 @@ import HeroBanner from "../component/HeroBanner";
 import Presenters from "../component/Presenters";
 import Schedule from "../component/Schedule";
 import Objectives from "../component/Objectives";
+import Footer from "../component/Footer"
 
 // styles
 
 const Description = styled.p`
-padding-bottom: 1rem;
+margin-bottom: 1rem;
+line-height: 1.5rem;
 `;
 
 const DescriptionContainer = styled.section`
@@ -53,7 +55,7 @@ const IndexPage = () => {
 
       <Objectives />
 
-      
+      <Footer />
     </main>
   );
 };
