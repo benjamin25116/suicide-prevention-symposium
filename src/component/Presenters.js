@@ -121,6 +121,9 @@ const Container = styled.section`
   @media (min-width: 1600px) {
     min-width: 1600px;
   }
+  @media (min-width: 1920px) {
+    min-width: 1920px;
+  }
 `;
 
 const Heading = styled.h2`

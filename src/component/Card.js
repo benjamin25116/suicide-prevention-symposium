@@ -59,6 +59,7 @@ const ThirdLine = styled.span`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  height: 200px;
   padding: 0 1rem 1rem 1rem;
 `;
 
