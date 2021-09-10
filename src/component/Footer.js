@@ -34,6 +34,13 @@ const Links = styled.div`
 function Footer() {
   return (
     <Container>
+      <Copyright>
+        "Suicide: The Silent Pandemic" is a multidisciplinary symposium on
+        suicide prevention, <br />
+        organised by Dignity for Children Foundation in partnership with <br />
+        the Malaysian Association of Social Workers and the International
+        Counselling Association of Malaysia.
+      </Copyright>
       <Links>
         <a href="https://dignityforchildren.org/">
           Dignity for Children Foundation
@@ -45,10 +52,6 @@ function Footer() {
           International Counseling Association of Malaysia
         </a>
       </Links>
-      <Copyright>
-        Suicide: The Silent Pandemic <br />
-        Organised by Dignity for Children Foundation.
-      </Copyright>
     </Container>
   );
 }

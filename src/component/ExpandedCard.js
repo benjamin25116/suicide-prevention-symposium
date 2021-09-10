@@ -18,7 +18,7 @@ const Container = styled.article`
 const Pic = styled.img`
   object-fit: cover;
   margin-bottom: 1rem;
-  max-height: 250px;
+  height: 320px;
 
   @media (min-width: 768px) {
     float: left;
@@ -30,7 +30,7 @@ const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-bottom: 1px solid #e3e0de;
+  border-bottom: 1px solid pink;
   padding: 2rem;
 
   @media (min-width: 768px) {

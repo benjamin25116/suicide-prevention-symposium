@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  min-height: 420px;
+  min-height: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: space-around;
@@ -22,7 +22,7 @@ const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 420px;
+  height: 500px;
   width: 100%;
 
   @media (min-width: 768px) {
@@ -37,15 +37,14 @@ const Image = styled.div`
 `;
 
 const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 3rem;
   max-width: 700px;
   margin: 0 auto;
-  height: 420px;
   @media (min-width: 768px) {
     min-width: 384px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   @media (min-width: 1024px) {
     min-width: 500px;

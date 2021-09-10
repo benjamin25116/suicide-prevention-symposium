@@ -20,7 +20,7 @@ const data = [
     name: "Dr. J.J. Rasimas",
     role: "Keynote Speaker",
     title:
-      "M.D. in Psychiatry, Ph.D. in chemical biology. Psychiatrist at Hennepin County Medical Center in Minnesota. Professor at the University of Minnesota.",
+      "M.D. in Psychiatry, Ph.D. in Chemical Biology. Psychiatrist at Hennepin County Medical Center in Minnesota. Professor at the University of Minnesota.",
     src: Rasimas,
     biodata: Bio.rasimas,
   },
@@ -65,7 +65,7 @@ const data = [
     biodata: Bio.petrina,
   },
   {
-    name: "Prof. Madya Dr. Mohd Suhaimi Bin Mohamad",
+    name: "Prof. Madya Dr. Mohd. Suhaimi Mohamad",
     role: "Panel Speaker",
     title:
       "Ph.D. in Social Work. Head of Social Work Program, Universiti Kebangsaan Malaysia.",
@@ -108,15 +108,18 @@ const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 1px solid green; */
-  @media (max-width: 767px) {
-    /* max-width: 350px; */
-  }
+
   @media (min-width: 768px) {
-    max-width: 700px;
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1024px;
   }
   @media (min-width: 1366px) {
-    max-width: 1366px;
+    min-width: 1366px;
+  }
+  @media (min-width: 1600px) {
+    min-width: 1600px;
   }
 `;
 
