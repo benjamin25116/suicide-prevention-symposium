@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const Normalise = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +18,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
@@ -45,6 +45,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+main{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2, 
+h3 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+	font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+p {
+    color: rgb(90,90,90);
+	padding-bottom: 1rem;
+  line-height: 1.75rem;
+  font-size: 1.2rem;
+}
 `;
 
-export default Normalise;
+export default GlobalStyle;

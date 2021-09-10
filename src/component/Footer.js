@@ -2,45 +2,55 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-	background-color: #e3e0de;
-	/* min-height: 200px; */
-    padding: 4rem 0;
+  /* background-color: #e3e0de; */
+  background-color: #f9f4f1;
+  /* min-height: 200px; */
+  padding: 4rem 0;
 `;
 
 const Copyright = styled.p`
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-style: italic;
-max-width: 768px;
-margin: 0 auto;
-text-align: center;
-font-size: 0.9rem;
-`
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9rem;
+`;
 
 const Links = styled.div`
-display: flex;
-flex-direction: column;
-max-width: 768px;
-margin: 1rem auto;
-& a{
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: 1rem auto;
+  & a {
     font-size: 0.9rem;
     text-align: center;
     text-decoration: none;
     color: inherit;
     margin-bottom: 0.5rem;
-
-}`
+  }
+`;
 
 function Footer() {
-	return (
-		<Container>
-            <Links>
-            <a href="https://dignityforchildren.org/">Dignity for Children Foundation</a>
-            <a href="https://www.masw.org.my/">Malaysian Association of Social Workers</a>
-            <a href="https://www.perkamainternational.org.my/">International Counseling Association of Malaysia</a>
-            </Links>
-			<Copyright>Organised by Dignity for Children Foundation.</Copyright>
-		</Container>
-	);
+  return (
+    <Container>
+      <Links>
+        <a href="https://dignityforchildren.org/">
+          Dignity for Children Foundation
+        </a>
+        <a href="https://www.masw.org.my/">
+          Malaysian Association of Social Workers
+        </a>
+        <a href="https://www.perkamainternational.org.my/">
+          International Counseling Association of Malaysia
+        </a>
+      </Links>
+      <Copyright>
+        Suicide: The Silent Pandemic <br />
+        Organised by Dignity for Children Foundation.
+      </Copyright>
+    </Container>
+  );
 }
 
 export default Footer;
