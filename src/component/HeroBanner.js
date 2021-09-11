@@ -10,13 +10,11 @@ const Banner = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
-  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 670px;
   @media (min-width: 768px) {
     height: 100vh;
   }
@@ -35,16 +33,29 @@ const Heading = styled.h1`
   font-weight: bold;
   text-transform: uppercase;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 `;
 
 const SubHeading = styled.p`
   color: white;
-  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.7rem;
   font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+`;
+
+const Date = styled(SubHeading)`
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
-  max-width: 400px;
+`;
+
+const SurTitle = styled(SubHeading)`
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  margin-bottom: 0;
 `;
 
 const Emphasis = styled.span`
@@ -53,17 +64,17 @@ const Emphasis = styled.span`
 `;
 
 const Dignity = styled.img`
-  height: 30px;
+  height: 35px;
   padding-right: 1rem;
   margin-bottom: 0.5rem;
 `;
 const Masw = styled.img`
-  height: 48px;
+  height: 58px;
   padding-right: 1rem;
   margin-bottom: 0.5rem;
 `;
 const Perkama = styled.img`
-  height: 55px;
+  height: 60px;
   margin-bottom: 0.5rem;
 `;
 
@@ -72,53 +83,60 @@ const LogoContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 3rem;
 `;
 
 const Button = styled.a`
-  display: block;
-  max-width: 18rem;
-  padding: 1rem 3rem;
+  padding: 1rem 3.5rem;
   border-radius: 2rem;
   background-color: white;
+  border: 3px solid white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1.25rem;
   text-decoration: none;
   text-align: center;
-  color: rgb(5, 0, 50);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); */
+
+  &:hover {
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+  }
+  &:active {
+    color: black;
+    border: 3px solid black;
+    background-color: white;
+  }
 `;
 
-const extraMarginBottom = {
-  marginBottom: "5rem",
-};
+const TitleWrapper = styled.div`
+  margin-bottom: 5rem;
+`;
 
 function HomeBanner() {
   return (
     <Banner>
       <Wrapper>
-        <Heading>
-          Suicide:
-          <br />
-          the <Emphasis>{`Silent `} </Emphasis>
-          Pandemic
-        </Heading>
-        <SubHeading>
-          Malaysia’s First Multidisciplinary Symposium: Let’s Talk About Suicide
-          Prevention Together
-        </SubHeading>
-        <SubHeading style={extraMarginBottom}>
-          25th September 2021 • 1pm-7pm
-        </SubHeading>
+        <TitleWrapper>
+          <Heading>
+            Suicide:
+            <br />
+            the <Emphasis>{`Silent `} </Emphasis>
+            Pandemic
+          </Heading>
+          <SubHeading>Let’s Talk About Suicide Prevention Together</SubHeading>
+          <Date>25th September 2021 • 1pm-7pm</Date>
+          <Button href="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
+            Register now
+          </Button>
+        </TitleWrapper>
+        <SurTitle>Malaysia's First Multidisciplinary Symposium</SurTitle>
         <LogoContainer>
           <Dignity src={dignity} alt="Dignity for Children Foundation logo" />
           <Masw src={masw} alt="MASW logo" />
           <Perkama src={perkama} alt="PERKAMA logo" />
         </LogoContainer>
-        <Button href="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
-          Register now
-        </Button>
       </Wrapper>
     </Banner>
   );

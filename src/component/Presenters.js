@@ -28,7 +28,7 @@ const data = [
     name: "Dr. Valerie Jaques",
     role: "Keynote Speaker",
     title:
-      "Doctor of Clinical Psychology. Founder of Integrated Psychology Network Sdn. Bhd.",
+      "Ph.D. in Clinical Psychology. Founder of Integrated Psychology Network Sdn. Bhd.",
     src: Jaques,
     biodata: Bio.jaques,
   },
@@ -36,7 +36,7 @@ const data = [
     name: "Prof. Dr. Azlinda Azman",
     role: "Panel Moderator",
     title:
-      "Doctor of Clinical Social Work President of Malaysian Association of Social Workers. Head of Social Work Program, Universiti Sains Malaysia.",
+      "Ph.D. in Clinical Social Work President of Malaysian Association of Social Workers. Head of Social Work Program, Universiti Sains Malaysia.",
     src: Azlinda,
     biodata: Bio.azlinda,
   },
@@ -57,7 +57,7 @@ const data = [
     biodata: Bio.louis,
   },
   {
-    name: "Ms. Petrina Shee Shiang Fei (Satvinder)",
+    name: "Ms. Petrina Satvinder",
     role: "Panel Speaker",
     title:
       "M.A. Holistic Child Development, M.Ed. in Curriculum and Pedagogy. Co-founder and CEO of Dignity for Children Foundation.",
@@ -70,6 +70,7 @@ const data = [
     title:
       "Ph.D. in Social Work. Head of Social Work Program, Universiti Kebangsaan Malaysia.",
     src: Mohamad,
+    biodata: Bio.mohamad,
   },
   {
     name: "Datoʼ Dr. Abd. Halim Mohd. Hussin",
@@ -82,7 +83,8 @@ const data = [
   {
     name: "Dr. Robert Guibord",
     role: "Panel Speaker",
-    title: "Doctor of Clinical Psychology. Psychoanalyst in Private Practice.",
+    title:
+      "Ph.D. in Clinical Psychology. Private practice in psychoanalysis and psychotherapy.",
     src: Guibord,
     biodata: Bio.guibord,
   },
@@ -109,6 +111,9 @@ const Container = styled.section`
   flex-wrap: wrap;
   justify-content: center;
 
+  @media (min-width: 568px) {
+    max-width: 568px;
+  }
   @media (min-width: 768px) {
     max-width: 768px;
   }
@@ -134,7 +139,7 @@ const Heading = styled.h2`
   text-transform: capitalize;
   line-height: 3rem;
   margin-bottom: 2rem;
-  border-bottom: 4px solid rgb(5, 0, 50);
+  /* border-bottom: 4px solid rgb(5, 0, 50); */
 `;
 
 function Presenters() {
@@ -151,6 +156,7 @@ function Presenters() {
               secondLine={speaker.role}
               thirdLine={speaker.title}
               bio={speaker.biodata}
+              presenter={true}
             />
           );
         })}
