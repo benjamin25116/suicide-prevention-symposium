@@ -215,7 +215,7 @@ function Schedule() {
       </Wrapper>
       <Wrapper>
         <SecondLine>Closing Address</SecondLine>
-        <ThirdLine>Dr. Valerie Jaques</ThirdLine>
+        <ThirdLine>Dr. Mahinder Kaur</ThirdLine>
       </Wrapper>
     </Background>
   );
