@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import ScheduleItem from "./ScheduleItem";
+import Heading from "./Heading";
 
 const data = [
   {
@@ -133,17 +134,6 @@ const Container = styled.section`
   @media (min-width: 1920px) {
     min-width: 1920px;
   }
-`;
-
-const Heading = styled.h2`
-  display: inline-block;
-  color: rgb(5, 0, 50);
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  line-height: 3rem;
-  margin-bottom: 2rem;
-  /* border-bottom: 4px solid rgb(5, 0, 50); */
 `;
 
 function Schedule() {

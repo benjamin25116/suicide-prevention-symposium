@@ -23,13 +23,14 @@ const SecondLine = styled.span`
   font-weight: bold;
   font-size: 1.2rem;
   color: rgb(50, 50, 50);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 `;
 
 const ThirdLine = styled.span`
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.35rem;
   color: rgb(50, 50, 50);
+  margin-bottom: 0.8rem;
   /* border: 1px solid black; */
 `;
 

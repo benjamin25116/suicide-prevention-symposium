@@ -53,6 +53,9 @@ const TextWrapper = styled.div`
 `;
 
 const Heading = styled.h2`
+  font-size: 2.5rem;
+  line-height: 3rem;
+
   @media (min-width: 768px) {
     text-align: left;
   }

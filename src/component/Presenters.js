@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Profile from "./Profile";
 import Bio from "./Biodata";
+import Heading from "./Heading";
 
 import Rasimas from "../images/speaker_photos/rasimas.jpg";
 import Jaques from "../images/speaker_photos/jaques.jpeg";
@@ -110,8 +111,8 @@ const data = [
 
 const Background = styled.div`
   background-color: #e3e0de;
-  width: 100vw;
-  padding-top: 3rem;
+  width: 100%;
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -140,17 +141,6 @@ const Container = styled.section`
   @media (min-width: 1920px) {
     min-width: 1920px;
   }
-`;
-
-const Heading = styled.h2`
-  display: inline-block;
-  color: rgb(5, 0, 50);
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  line-height: 3rem;
-  margin-bottom: 2rem;
-  /* border-bottom: 4px solid rgb(5, 0, 50); */
 `;
 
 function Presenters() {

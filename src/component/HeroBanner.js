@@ -4,6 +4,7 @@ import image from "../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg";
 import dignity from "../images/logo/dignity-logo.png";
 import masw from "../images/logo/masw-logo.png";
 import perkama from "../images/logo/perkama-logo.png";
+import Button from "./Button";
 
 const Banner = styled.section`
   background-image: url(${image});
@@ -83,31 +84,6 @@ const LogoContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-`;
-
-const Button = styled.a`
-  padding: 1rem 3.5rem;
-  border-radius: 2rem;
-  background-color: white;
-  border: 3px solid white;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); */
-
-  &:hover {
-    background-color: black;
-    border: 3px solid white;
-    color: white;
-  }
-  &:active {
-    color: black;
-    border: 3px solid black;
-    background-color: white;
-  }
 `;
 
 const TitleWrapper = styled.div`

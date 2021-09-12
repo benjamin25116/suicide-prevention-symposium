@@ -1,20 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-  /* background-color: #e3e0de; */
-  background-color: #f9f4f1;
-  /* min-height: 200px; */
-  padding: 4rem 2rem;
-`;
+import Layout from "./Layout";
 
-const Copyright = styled.p`
+const Information = styled.p`
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   max-width: 768px;
   margin: 0 auto;
   text-align: center;
   font-size: 0.9rem;
+  line-height: 1.4rem;
 `;
 
 const Links = styled.div`
@@ -28,18 +24,16 @@ const Links = styled.div`
     text-decoration: none;
     color: inherit;
     margin-bottom: 0.5rem;
+
+    :hover {
+      color: burlywood;
+    }
   }
 `;
 
 function Footer() {
   return (
-    <Container>
-      <Copyright>
-        "Suicide: The Silent Pandemic" is a multidisciplinary symposium on
-        suicide prevention, organized by Dignity for Children Foundation in
-        partnership with the Malaysian Association of Social Workers and the
-        International Counseling Association of Malaysia.
-      </Copyright>
+    <Layout backgroundColor="#f9f4f1">
       <Links>
         <a href="https://dignityforchildren.org/">
           Dignity for Children Foundation
@@ -51,7 +45,15 @@ function Footer() {
           International Counseling Association of Malaysia
         </a>
       </Links>
-    </Container>
+      <Information>
+        "Suicide: The Silent Pandemic" is a multidisciplinary symposium on
+        suicide prevention, organized by Dignity for Children Foundation in
+        partnership with the Malaysian Association of Social Workers and the
+        International Counseling Association of Malaysia.
+      </Information>
+
+      <Information>© 2021, Dignity for Children Foundation</Information>
+    </Layout>
   );
 }
 
