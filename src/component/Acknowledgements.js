@@ -6,7 +6,7 @@ import Heading from "./Heading";
 function Acknowledgements() {
   return (
     <Layout backgroundColor="#f9f4f1">
-      <Heading>Acknowledgements</Heading>
+      <Heading>Acknowledgement</Heading>
       <p>
         The past year has been a difficult for many. It is organizations like
         Perkama and Malaysia Association for Social Workers that hold up beacons
@@ -22,7 +22,7 @@ function Acknowledgements() {
         you enough. But we will try - thank you.
       </p>
       <p>
-        To Rev Elisha Satvinder and Petrina Satvinder, your pioneering spirit
+        To Rev. Elisha Satvinder and Petrina Satvinder, your pioneering spirit
         greets each new adventure with a big YES let's do it. Thank you for
         saying YES to this symposium.
       </p>
