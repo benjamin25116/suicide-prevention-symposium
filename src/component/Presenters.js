@@ -23,6 +23,7 @@ const data = [
       "M.D. in Psychiatry, Ph.D. in Chemical Biology. Psychiatrist at Hennepin County Medical Center in Minnesota. Professor at the University of Minnesota.",
     src: Rasimas,
     biodata: Bio.rasimas,
+    id: "rasimas",
   },
   {
     name: "Dr. Valerie Jaques",
@@ -31,6 +32,7 @@ const data = [
       "Ph.D. in Clinical Psychology. Founder of Integrated Psychology Network Sdn. Bhd.",
     src: Jaques,
     biodata: Bio.jaques,
+    id: "jaques",
   },
   {
     name: "Prof. Dr. Azlinda Azman",
@@ -39,6 +41,7 @@ const data = [
       "Ph.D. in Clinical Social Work President of Malaysian Association of Social Workers. Head of Social Work Program, Universiti Sains Malaysia.",
     src: Azlinda,
     biodata: Bio.azlinda,
+    id: "azlinda",
   },
   {
     name: "Datuk Dr. Raj Abdul Karim",
@@ -47,6 +50,7 @@ const data = [
       "President of the Malaysian Council of Child Welfare. Chair of End CSEC Network Malaysia. Chair of Malaysian Society of Association Executives.",
     src: Karim,
     biodata: Bio.karim,
+    id: "karim",
   },
   {
     name: "Ms. Larissa Ann Louis",
@@ -55,6 +59,7 @@ const data = [
       "Bachelor of Law (Hons). Litigation lawyer, Human Rights Activist, Messrs. Azri, Lee Swee Seng & Co.",
     src: Louis,
     biodata: Bio.louis,
+    id: "louis",
   },
   {
     name: "Ms. Petrina Satvinder",
@@ -63,6 +68,7 @@ const data = [
       "M.A. Holistic Child Development, M.Ed. in Curriculum and Pedagogy. Co-founder and CEO of Dignity for Children Foundation.",
     src: Petrina,
     biodata: Bio.petrina,
+    id: "petrina",
   },
   {
     name: "Prof. Madya Dr. Mohd. Suhaimi Mohamad",
@@ -71,6 +77,7 @@ const data = [
       "Ph.D. in Social Work. Head of Social Work Program, Universiti Kebangsaan Malaysia.",
     src: Mohamad,
     biodata: Bio.mohamad,
+    id: "mohamad",
   },
   {
     name: "Datoʼ Dr. Abd. Halim Mohd. Hussin",
@@ -79,6 +86,7 @@ const data = [
       "Drug Addiction Counseling Expert. Honorary Fellow of Asian Center for Research on Drug Abuse, USIM. President of PERKAMA International.",
     src: Halim,
     biodata: Bio.halim,
+    id: "halim",
   },
   {
     name: "Dr. Robert Guibord",
@@ -87,13 +95,16 @@ const data = [
       "Ph.D. in Clinical Psychology. Private practice in psychoanalysis and psychotherapy.",
     src: Guibord,
     biodata: Bio.guibord,
+    id: "guibord",
   },
   {
     name: "Rev. Elisha Satvinder",
+    role: "Opening Address",
     title:
       "Co-founder of Dignity for Children Foundation. Council member and Honorary Secretary of the National Evangelical Christian Fellowship.",
     src: Elisha,
     biodata: Bio.elisha,
+    id: "elisha",
   },
 ];
 
@@ -156,7 +167,7 @@ function Presenters() {
               secondLine={speaker.role}
               thirdLine={speaker.title}
               bio={speaker.biodata}
-              presenter={true}
+              id={speaker.id}
             />
           );
         })}

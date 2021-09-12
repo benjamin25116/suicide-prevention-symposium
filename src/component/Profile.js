@@ -1,6 +1,11 @@
 import React from "react";
 import Card from "./Card";
 import ExpandedCard from "./ExpandedCard";
+import styled from "styled-components";
+
+const Link = styled.a`
+  text-decoration: none;
+`;
 
 class Profile extends React.Component {
   constructor() {
@@ -19,20 +24,22 @@ class Profile extends React.Component {
   render() {
     if (this.state.isOpen) {
       return (
-        <div onClick={this.handleClick}>
+        <Link href={`/#${this.props.id}`} onClick={this.handleClick}>
           <ExpandedCard
+            id={this.props.id}
             src={this.props.src}
             firstLine={this.props.firstLine}
             secondLine={this.props.secondLine}
             thirdLine={this.props.thirdLine}
             bio={this.props.bio}
           />
-        </div>
+        </Link>
       );
     }
     return (
-      <div onClick={this.handleClick}>
+      <Link href={`/#${this.props.id}`} onClick={this.handleClick}>
         <Card
+          id={this.props.id}
           src={this.props.src}
           firstLine={this.props.firstLine}
           secondLine={this.props.secondLine}
@@ -40,7 +47,7 @@ class Profile extends React.Component {
           bio={this.props.bio}
           presenter={this.props.presenter}
         />
-      </div>
+      </Link>
     );
   }
 }

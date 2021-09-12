@@ -9,6 +9,10 @@ const Container = styled.article`
   margin: 0 1rem 2rem 1rem;
   max-width: 320px;
   padding-bottom: 1rem;
+  transition: all 0.2s;
+  :hover {
+    transform: scale(105%);
+  }
   /* border: 1px solid green; */
 `;
 
@@ -31,7 +35,7 @@ const FirstLine = styled.span`
   line-height: 1.5rem;
   color: rgb(50, 50, 50);
   margin-bottom: 0.4rem;
-  text-align: ${(props) => (props.presenter ? "left" : "center")};
+  text-align: left;
   /* border: 1px solid red; */
 `;
 
@@ -39,7 +43,7 @@ const SecondLine = styled.span`
   font-weight: lighter;
   font-size: 1.2rem;
   color: rgb(50, 50, 50);
-  text-align: ${(props) => (props.presenter ? "left" : "center")};
+  text-align: left;
   margin-bottom: 0.8rem;
 `;
 
@@ -50,7 +54,7 @@ const ThirdLine = styled.span`
   font-size: 1rem;
   line-height: 1.35rem;
   color: rgb(50, 50, 50);
-  text-align: ${(props) => (props.presenter ? "left" : "center")};
+  text-align: left;
   padding-top: 0.8rem;
   border-top: 1px solid pink;
 `;
@@ -58,7 +62,7 @@ const ThirdLine = styled.span`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: ${(props) => (props.presenter ? "210px" : null)};
+  height: 210px;
   padding: 0 1rem 0 1rem;
 `;
 
@@ -66,7 +70,7 @@ const Arrow = styled.span`
   display: flex;
   flex-grow: 3;
   font-size: 2rem;
-  color: pink;
+  color: burlywood;
   justify-content: center;
   align-items: flex-end;
   height: 20px;
@@ -75,7 +79,7 @@ const Arrow = styled.span`
 
 function Card(props) {
   return (
-    <Container>
+    <Container id={props.id}>
       {props.src && <Pic src={props.src} />}
       <TextWrapper presenter={props.presenter}>
         {props.firstLine && (

@@ -36,9 +36,9 @@ function Footer() {
     <Container>
       <Copyright>
         "Suicide: The Silent Pandemic" is a multidisciplinary symposium on
-        suicide prevention, organised by Dignity for Children Foundation in
+        suicide prevention, organized by Dignity for Children Foundation in
         partnership with the Malaysian Association of Social Workers and the
-        International Counselling Association of Malaysia.
+        International Counseling Association of Malaysia.
       </Copyright>
       <Links>
         <a href="https://dignityforchildren.org/">

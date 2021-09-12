@@ -7,7 +7,6 @@ const Container = styled.article`
   flex-flow: column;
   align-items: center;
   margin-bottom: 2rem;
-  /* max-width: 250px; */
 
   @media (min-width: 768px) {
     display: block;
@@ -90,7 +89,7 @@ function ExpandedCard(props) {
   }
 
   return (
-    <Container>
+    <Container id={props.id}>
       {props.src && <Pic src={props.src} alt={props.name} />}
       <TitleWrapper>
         {props.firstLine && <FirstLine>{props.firstLine}</FirstLine>}
