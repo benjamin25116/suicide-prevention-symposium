@@ -9,7 +9,7 @@ function Acknowledgements() {
       <Heading>Acknowledgement</Heading>
       <p>
         The past year has been a difficult for many. It is organizations like
-        Perkama and Malaysia Association for Social Workers that hold up beacons
+        PERKAMA and Malaysia Association for Social Workers that hold up beacons
         of hope and encouragement to many of us. We want to thank them for their
         support and backing. Your partnership was not only in words but in
         deeds. We are grateful. Thank you.
