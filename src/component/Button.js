@@ -14,12 +14,14 @@ const StyledButton = styled.a`
   color: ${(props) => (props.reverse ? "white " : "black")};
   /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); */
 
-  &:hover {
+  :hover {
     background-color: ${(props) => (props.reverse ? "white " : "black")};
     border: 3px solid ${(props) => (props.reverse ? "black " : "white")};
     color: ${(props) => (props.reverse ? "black " : "white")};
+    cursor: pointer;
   }
-  &:active {
+
+  :active {
     color: black;
     border: 3px solid black;
     background-color: white;

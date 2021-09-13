@@ -3,18 +3,18 @@ import styled from "styled-components";
 
 import Profile from "./Profile";
 import Bio from "./Biodata";
-import Heading from "./Heading";
+import Heading from "../Heading";
 
-import Rasimas from "../images/speaker_photos/rasimas.jpg";
-import Jaques from "../images/speaker_photos/jaques.jpeg";
-import Azlinda from "../images/speaker_photos/azlinda.jpg";
-import Karim from "../images/speaker_photos/raj-abdul-karim.jpg";
-import Louis from "../images/speaker_photos/louis.jpg";
-import Petrina from "../images/speaker_photos/petrina.png";
-import Mohamad from "../images/speaker_photos/mohamed.jpg";
-import Halim from "../images/speaker_photos/halim.jpg";
-import Guibord from "../images/speaker_photos/guibord.jpeg";
-import Elisha from "../images/speaker_photos/elisha.jpg";
+import Rasimas from "../../images/speaker_photos/rasimas.jpg";
+import Jaques from "../../images/speaker_photos/jaques.jpeg";
+import Azlinda from "../../images/speaker_photos/azlinda.jpg";
+import Karim from "../../images/speaker_photos/raj-abdul-karim.jpg";
+import Louis from "../../images/speaker_photos/louis.jpg";
+import Petrina from "../../images/speaker_photos/petrina.png";
+import Mohamad from "../../images/speaker_photos/mohamed.jpg";
+import Halim from "../../images/speaker_photos/halim.jpg";
+import Guibord from "../../images/speaker_photos/guibord.jpeg";
+import Elisha from "../../images/speaker_photos/elisha.jpg";
 
 const data = [
   {

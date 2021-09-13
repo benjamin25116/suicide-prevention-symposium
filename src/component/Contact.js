@@ -17,7 +17,12 @@ const Grid = styled.div`
   grid-template-columns: 1fr 5fr;
   margin-bottom: 2rem;
 
-  label,
+  span {
+    display: inline-block;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
   input,
   textarea {
     font-family: inherit;
@@ -33,6 +38,13 @@ const Grid = styled.div`
 
     grid-column-start: 2;
     grid-column-end: 3;
+
+    ::placeholder {
+      color: gray;
+      font-weight: lighter;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
   }
   textarea {
     height: 4rem;
@@ -42,6 +54,7 @@ const Grid = styled.div`
     grid-column-start: 1;
     grid-column-end: 2;
     padding-right: 1rem;
+    padding-top: 1rem;
   }
 `;
 
@@ -63,7 +76,9 @@ const StyledButton = styled.button`
     background-color: white;
     border: 3px solid black;
     color: black;
+    cursor: pointer;
   }
+
   &:active {
     color: black;
     border: 3px solid black;
@@ -78,13 +93,13 @@ function Contact() {
       <ContactForm name="contact" method="POST" action="" data-netlify="true">
         <Grid>
           <input name="form-name" value="contact" type="hidden" />
-          <label>Name</label>
-          <input type="text" name="name" placeholder="Your Name" />
-          <label>Email</label>
-          <input type="text" name="email" placeholder="Your Email" />
-          <label>Subject</label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" />
+          <span>Email</span>
+          <input type="text" name="email" placeholder="Your email" />
+          <span>Subject</span>
           <input type="text" name="subject" placeholder="Subject" />
-          <label>Message</label>
+          <span>Message</span>
           <textarea name="message" placeholder="Your message" />
         </Grid>
 

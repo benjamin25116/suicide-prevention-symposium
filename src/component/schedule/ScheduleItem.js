@@ -53,6 +53,7 @@ const Arrow = styled.span`
 
 const Wrapper = styled.div`
   display: flex;
+
   :hover {
     span {
       color: ${(props) => props.clickable && "burlywood"};

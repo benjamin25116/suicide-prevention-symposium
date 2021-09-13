@@ -13,7 +13,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,6 +21,9 @@ time, mark, audio, video {
 	/* font: inherit; */
 	vertical-align: baseline;
 	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -69,6 +72,11 @@ p {
 	padding-bottom: 1rem;
   line-height: 1.75rem;
   font-size: 1.2rem;
+}
+
+hr {
+	margin: 0;
+	border: 1px solid white;
 }
 `;
 

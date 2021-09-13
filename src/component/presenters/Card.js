@@ -9,8 +9,9 @@ const Container = styled.article`
   margin: 0 1rem 2rem 1rem;
   max-width: 320px;
   padding-bottom: 1rem;
-  transition: all 0.2s;
+
   :hover {
+    -webkit-transform: scale(1.05, 1.05);
     transform: scale(105%);
   }
   /* border: 1px solid green; */

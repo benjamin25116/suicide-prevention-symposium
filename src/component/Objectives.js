@@ -3,45 +3,6 @@ import styled from "styled-components";
 
 import Heading from "./Heading";
 
-const Container = styled.section`
-  background: #f9f4f1;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  /* border-bottom: 4px solid rgb(5, 0, 50); */
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  /* max-width: 768px; */
-  margin: 0 auto;
-`;
-
-const InnerContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 41rem;
-`;
-
-const Card = styled.article`
-  /* background-color: ${(props) => (props.reverse ? null : "white")}; */
-  /* background-image: ${(props) =>
-    props.reverse
-      ? "linear-gradient(to bottom, rgb(30,30, 100), rgb(10,10,10))"
-      : null}; */
-
-  /* color: ${(props) => (props.reverse ? "white" : null)}; */
-
-  background-color: white;
-  padding: 2rem;
-  /* border-radius: 1rem;
-	border: 3px solid rgb(5, 0, 50); */
-  margin-bottom: 2rem;
-  line-height: 1.25rem;
-  max-width: 13rem;
-`;
-
 const data = [
   "To integrate suicide prevention into the work of all organizations and programs that provide services and support in the community.",
   "To develop resources that will help counter the prejudice, silence, and denial that can prevent individuals from seeking help.",

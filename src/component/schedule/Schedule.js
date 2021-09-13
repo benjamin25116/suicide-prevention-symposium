@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import ScheduleItem from "./ScheduleItem";
-import Heading from "./Heading";
+import Heading from "../Heading";
 
 const data = [
   {

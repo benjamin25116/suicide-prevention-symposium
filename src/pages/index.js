@@ -3,8 +3,8 @@ import GlobalStyle from "./GlobalStyle";
 
 import Layout from "../component/Layout";
 import HeroBanner from "../component/HeroBanner";
-import Presenters from "../component/Presenters";
-import Schedule from "../component/Schedule";
+import Presenters from "../component/presenters/Presenters";
+import Schedule from "../component/schedule/Schedule";
 import Footer from "../component/Footer";
 import Contact from "../component/Contact";
 import Heading from "../component/Heading";
@@ -86,6 +86,7 @@ const IndexPage = () => {
       <Presenters />
       <Contact />
       <Acknowledgements />
+      <hr />
       <Footer />
     </main>
   );
