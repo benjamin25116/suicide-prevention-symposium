@@ -26,6 +26,7 @@ const Link = styled.span`
 
 const CallingCard = styled.img`
 width: 100%;
+max-width: 600px;
 padding: 1rem;
 &:hover{
 	-webkit-transform: scale(1.05, 1.05);
