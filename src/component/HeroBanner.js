@@ -103,7 +103,7 @@ function HomeBanner() {
           </Heading>
           <SubHeading>Let’s Talk About Suicide Prevention Together</SubHeading>
           <Date>25th September 2021 • 1pm-7pm</Date>
-          <Button href="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
+          <Button to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
             Register now
           </Button>
         </TitleWrapper>

@@ -33,7 +33,7 @@ function Charges() {
         </Body>
         <Button
           reverse="true"
-          href="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true"
+          to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true"
         >
           Register now
         </Button>

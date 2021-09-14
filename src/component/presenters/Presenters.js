@@ -39,7 +39,7 @@ const data = [
     name: "Prof. Dr. Azlinda Azman",
     role: "Panel Moderator",
     title:
-      "Ph.D. in Clinical Social Work President of Malaysian Association of Social Workers. Head of Social Work Program, Universiti Sains Malaysia.",
+      "Ph.D. in Clinical Social Work. President Malaysian Association of Social Workers. Dean, School of Social Sciences, Universiti Sains Malaysia, Penang.",
     src: Azlinda,
     biodata: Bio.azlinda,
     id: "azlinda",

@@ -28,8 +28,8 @@ const StyledButton = styled.a`
   }
 `;
 
-function Button({ children, reverse }) {
-  return <StyledButton reverse={reverse && reverse}>{children}</StyledButton>;
+function Button({ children, reverse, to }) {
+return <StyledButton href={to} reverse={reverse && reverse}>{children}</StyledButton>;
 }
 
 export default Button;
