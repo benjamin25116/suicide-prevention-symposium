@@ -75,7 +75,7 @@ const data = [
     name: "Prof. Madya Dr. Mohd. Suhaimi Mohamad",
     role: "Panel Speaker",
     title:
-      "Ph.D. in Social Work. Head of Social Work Program, Universiti Kebangsaan Malaysia.",
+      "Ph.D. in Social Work. Director, Center for Professional and Leadership Development, Universiti Kebangsaan Malaysia.",
     src: Mohamad,
     biodata: Bio.mohamad,
     id: "mohamad",

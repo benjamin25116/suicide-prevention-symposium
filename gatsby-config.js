@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Suicide Prevention Symposium",
+    siteUrl: "https://https://silentpandemic.netlify.app/",
+    title: "Suicide: The Silent Pandemic",
   },
   plugins: [
     "gatsby-plugin-styled-components",
