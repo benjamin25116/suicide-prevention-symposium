@@ -1,7 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-
-import Heading from "./Heading";
 
 const data = [
   "To integrate suicide prevention into the work of all organizations and programs that provide services and support in the community.",
@@ -11,23 +8,7 @@ const data = [
 ];
 
 function Objectives() {
-  let cards = data.map((card) => {
-    if (data.indexOf(card) % 2 === 0) {
-      return <Card key={card.length}>{card}</Card>;
-    }
-    return (
-      <Card reverse key={card.length}>
-        {card}
-      </Card>
-    );
-  });
-
-  return (
-    <Container>
-      <Heading>Objective</Heading>
-      <InnerContainer>{cards}</InnerContainer>
-    </Container>
-  );
+  return <pre>{JSON.stringify(data, null, 2)}</pre>;
 }
 
 export default Objectives;
