@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SaiFun from "../images/saifun-contact.jpeg";
 
-const StyledArticle = styled.article`
+const StyledModal = styled.span`
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	left: 0;
@@ -25,6 +25,8 @@ const Link = styled.span`
 `;
 
 const CallingCard = styled.img`
+width: 100%;
+padding: 1rem;
 &:hover{
 	-webkit-transform: scale(1.05, 1.05);
 	transform: scale(1.05);
@@ -48,9 +50,9 @@ class Modal extends React.Component {
 	render() {
 		const modal = this.state.showModal ? (
 			<>
-				<StyledArticle onClick={this.handleClick}>
+				<StyledModal onClick={this.handleClick}>
 					<CallingCard src={SaiFun} alt="Sai Fun calling card" />
-				</StyledArticle>
+				</StyledModal>
 				{this.props.children}
 			</>
 		) : (
