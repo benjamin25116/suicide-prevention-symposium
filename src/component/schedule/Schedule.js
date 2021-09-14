@@ -154,43 +154,6 @@ function Schedule() {
     <Background>
       <Heading>Schedule</Heading>
       <Container>{content}</Container>
-      {/* <Wrapper>
-          <FirstLine>1:00pm-2:00pm</FirstLine>
-          <SecondLine>Opening Address</SecondLine>
-          <ThirdLine>Rev. Elisha Satvinder</ThirdLine>
-        </Wrapper>
-        <Wrapper>
-          <SecondLine>Moderator</SecondLine>
-          <ThirdLine>Prof. Dr. Azlinda Azman</ThirdLine>
-        </Wrapper>
-        <Wrapper>
-          <SecondLine>Opening Keynote Speaker</SecondLine>
-          <ThirdLine>Dr. J.J. Rasimas</ThirdLine>
-        </Wrapper>
-        <Wrapper>
-          <FirstLine>2:00pm-5:00pm</FirstLine>
-          <SecondLine>Panel Speakers</SecondLine>
-          <ThirdLine>Datuk Dr. Raj Abdul Karim</ThirdLine>
-          <ThirdLine>Ms. Petrina Satvinder</ThirdLine>
-          <ThirdLine>Dato' Dr. Abd. Halim Mohd. Hussin</ThirdLine>
-          <ThirdLine>Ms. Larissa Ann Louis</ThirdLine>
-          <ThirdLine>Dr. Robert Guibord</ThirdLine>
-          <ThirdLine>Prof. Madya Dr. Mohd. Suhaimi Mohamad</ThirdLine>
-        </Wrapper>
-        <Wrapper>
-          <FirstLine>5:00pm-6:30pm</FirstLine>
-          <SecondLine>Panel Discussion</SecondLine>
-          <SecondLine>Q & A</SecondLine>
-        </Wrapper>
-        <Wrapper>
-          <FirstLine>6:30pm-7:00pm</FirstLine>
-          <SecondLine>Closing Keynote Speaker</SecondLine>
-          <ThirdLine>Dr. Valerie Jaques</ThirdLine>
-        </Wrapper>
-        <Wrapper>
-          <SecondLine>Closing Address</SecondLine>
-          <ThirdLine>Dr. Mahinder Kaur</ThirdLine>
-        </Wrapper> */}
     </Background>
   );
 }

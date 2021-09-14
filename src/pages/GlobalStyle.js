@@ -25,6 +25,9 @@ time, mark, audio, video, button {
     transition: all 0.2s ease-in-out;
 
 }
+html{
+	width: 100%;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
