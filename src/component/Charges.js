@@ -31,6 +31,7 @@ function Charges() {
           participants and above are eligible for group discount of RM 30 per
           person (not applicable for certification and CPD points).
         </Body>
+        <Body><b>Scholarships</b> are available.</Body>
         <Button
           reverse="true"
           to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true"
