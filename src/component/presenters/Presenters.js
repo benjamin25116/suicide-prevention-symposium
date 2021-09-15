@@ -48,7 +48,7 @@ const data = [
     name: "Datuk Dr. Raj Abdul Karim",
     role: "Panel Speaker",
     title:
-      "President of the Malaysian Council of Child Welfare. Chair of End CSEC Network Malaysia. Chair of Malaysian Society of Association Executives.",
+      "President of the Malaysian Council of Child Welfare. Chair of End CSEC Network Malaysia. Vice President of Federation Reproductive Health Associations Malaysia.",
     src: Karim,
     biodata: Bio.karim,
     id: "karim",
