@@ -54,6 +54,7 @@ table {
 
 main{
     font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 h1,

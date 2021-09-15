@@ -96,9 +96,7 @@ function HomeBanner() {
       <Wrapper>
         <TitleWrapper>
           <Heading>
-            Suicide:
-            <br />
-            the <Emphasis>{`Silent `} </Emphasis>
+            Suicide: the <Emphasis>{`Silent `} </Emphasis>
             Pandemic
           </Heading>
           <SubHeading>Let’s Talk About Suicide Prevention Together</SubHeading>

@@ -23,6 +23,11 @@ function IndexPage() {
       <GlobalStyle />
       <Helmet>
         <title>Suicide: The Silent Pandemic</title>
+        <meta
+          name="description"
+          content="Malaysia's First Multidisciplinary Symposium on Suicide Prevention."
+        />
+
         <HeadTag />
       </Helmet>
 

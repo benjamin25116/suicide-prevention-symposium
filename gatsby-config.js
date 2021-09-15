@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://https://silentpandemic.netlify.app/",
     title: "Suicide: The Silent Pandemic",
+    description:
+      "Malaysia's First Multidisciplinary Symposium on Suicide Prevention.",
   },
   plugins: [
     "gatsby-plugin-styled-components",
