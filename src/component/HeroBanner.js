@@ -138,7 +138,7 @@ function HomeBanner() {
           style={{ height: "100%", width: "100%" }}
           alt="Man standing in a stairwell looking up"
           role="presentational"
-          placeholder="tracedSVG"
+          placeholder="dominantColor"
         />
       </Bottom>
     </Banner>
