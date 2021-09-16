@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
 import image from "../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg";
 import dignity from "../images/logo/dignity-logo.png";
 import masw from "../images/logo/masw-logo.png";
@@ -7,7 +8,7 @@ import perkama from "../images/logo/perkama-logo.png";
 import Button from "./Button";
 
 const Banner = styled.section`
-  background-image: url(${image});
+  /* background-image: url(${image});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,16 +16,35 @@ const Banner = styled.section`
   padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  @media (min-width: 768px) {
+  align-items: center; */
+
+  display: grid;
+  position: relative; // imperative for the overlapping to work
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  @media (min-width: 1024px) {
     height: 100vh;
   }
 `;
 
-const Wrapper = styled.div`
-  width: 100vw;
+const Top = styled.div`
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 1; // tells the browser to make this image on top
+  /* background-color: rgba(0, 100, 0, 0.5); */
+  /* width: 100%; */
+  padding: 2rem;
+  place-self: center;
   @media (min-width: 768px) {
     max-width: 700px;
+  }
+`;
+
+const Bottom = styled.div`
+  grid-column: 1;
+  grid-row: 1;
+  @media (min-width: 1024px) {
+    height: 100vh;
   }
 `;
 
@@ -93,7 +113,7 @@ const TitleWrapper = styled.div`
 function HomeBanner() {
   return (
     <Banner>
-      <Wrapper>
+      <Top>
         <TitleWrapper>
           <Heading>
             Suicide: the <Emphasis>{`Silent `} </Emphasis>
@@ -111,7 +131,16 @@ function HomeBanner() {
           <Masw src={masw} alt="MASW logo" />
           <Perkama src={perkama} alt="PERKAMA logo" />
         </LogoContainer>
-      </Wrapper>
+      </Top>
+      <Bottom>
+        <StaticImage
+          src="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
+          style={{ height: "100%", width: "100%" }}
+          alt="Man standing in a stairwell looking up"
+          role="presentational"
+          placeholder="dominantColor"
+        />
+      </Bottom>
     </Banner>
   );
 }
