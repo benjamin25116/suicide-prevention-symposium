@@ -110,6 +110,10 @@ const TitleWrapper = styled.div`
   margin-bottom: 5rem;
 `;
 
+const ClosingDate = styled(SurTitle)`
+  margin-top: 2rem;
+`;
+
 function HomeBanner() {
   return (
     <Banner>
@@ -124,6 +128,9 @@ function HomeBanner() {
           <Button to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
             Register now
           </Button>
+          <ClosingDate>
+            Registration closes on <b>23rd September, 2021</b> (Thursday) at 5PM
+          </ClosingDate>
         </TitleWrapper>
         <SurTitle>Malaysia's First Multidisciplinary Symposium</SurTitle>
         <LogoContainer>
