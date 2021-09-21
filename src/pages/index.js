@@ -26,7 +26,7 @@ function IndexPage() {
         />
         <meta
           name="image"
-          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
         />
         <meta itemprop="name" content="Suicide: The Silent Pandemic" />
         <meta
@@ -35,7 +35,7 @@ function IndexPage() {
         />
         <meta
           itemprop="image"
-          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
         />
         <meta property="og:title" content="Suicide: The Silent Pandemic" />
         <meta
@@ -44,7 +44,7 @@ function IndexPage() {
         />
         <meta
           property="og:image"
-          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
         />
         <meta property="og:url" content="https://silentpandemic.netlify.app/" />
         <meta property="og:site_name" content="Suicide: The Silent Pandemic" />
