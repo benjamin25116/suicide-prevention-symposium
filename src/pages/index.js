@@ -20,12 +20,37 @@ function IndexPage() {
       <GlobalStyle />
       <Helmet>
         <title>Suicide: The Silent Pandemic</title>
+        <meta
+          name="description"
+          content="A multidisciplinary symposium on suicide prevention. "
+        />
+        <meta
+          name="image"
+          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+        />
 
-        {/* og:url, og:type, og:title, og:image, og:description, fb:app_id */}
-        {/* <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-HXGRMMZXNP"
-        ></script> */}
+        <meta itemprop="name" content="Suicide: The Silent Pandemic" />
+        <meta
+          itemprop="description"
+          content="A multidisciplinary symposium on suicide prevention."
+        />
+        <meta
+          itemprop="image"
+          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+        />
+
+        <meta name="og:title" content="Suicide: The Silent Pandemic" />
+        <meta
+          name="og:description"
+          content="A multidisciplinary symposium on suicide prevention."
+        />
+        <meta
+          name="og:image"
+          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
+        />
+        <meta name="og:url" content="https://silentpandemic.netlify.app" />
+        <meta name="og:site_name" content="Suicide: The Silent Pandemic" />
+        <meta name="og:type" content="website" />
       </Helmet>
 
       <noscript>
