@@ -17,39 +17,43 @@ import Charges from "../component/Charges";
 function IndexPage() {
   return (
     <main>
-      <Helmet>
-        <meta charset="utf-8" />
-        <title>Suicide: The Silent Pandemic</title>
-        <meta
-          name="description"
-          content="Malaysia's First Multidisciplinary Symposium on Suicide Prevention."
-        />
-        <meta
-          name="image"
-          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
-        />
-        <meta itemprop="name" content="Suicide: The Silent Pandemic" />
-        <meta
-          itemprop="description"
-          content="Malaysia's First Multidisciplinary Symposium on Suicide Prevention."
-        />
-        <meta
-          itemprop="image"
-          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
-        />
-        <meta property="og:title" content="Suicide: The Silent Pandemic" />
-        <meta
-          property="og:description"
-          content="Malaysia's First Multidisciplinary Symposium on Suicide Prevention."
-        />
-        <meta
-          property="og:image"
-          content="../images/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.jpg"
-        />
-        <meta property="og:url" content="https://silentpandemic.netlify.app/" />
-        <meta property="og:site_name" content="Suicide: The Silent Pandemic" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <Helmet
+        title="Suicide: The Silent Pandemic"
+        meta={[
+          {
+            name: `description`,
+            content:
+              "Malaysia's First Multidisciplinary Symposium on Suicide Prevention.",
+          },
+          {
+            name: `og:title`,
+            content: "Suicide: The Silent Pandemic",
+          },
+          {
+            name: `og:description`,
+            content:
+              "Malaysia's First Multidisciplinary Symposium on Suicide Prevention.",
+          },
+          {
+            name: `og:type`,
+            content: "website",
+          },
+          {
+            name: `og:image`,
+            content:
+              "https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/c3710/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp",
+          },
+          {
+            name: `og:url`,
+            content: "https://silentpandemic.netlify.app",
+          },
+          {
+            name: `og:site_name`,
+            content: "Suicide: The Silent Pandemic",
+          },
+        ]}
+      />
+
       <GlobalStyle />
       <noscript>
         <iframe
