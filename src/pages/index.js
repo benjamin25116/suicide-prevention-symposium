@@ -20,21 +20,6 @@ function IndexPage() {
       <GlobalStyle />
       <Helmet>
         <title>Suicide: The Silent Pandemic</title>
-        <meta
-          name="description"
-          content="Malaysia's First Multidisciplinary Symposium on Suicide Prevention."
-        />
-        <meta
-          property="og:image"
-          content="https://silentpandemic.netlify.app/static/b5fc3d3190a6dfb137e57905291edf11/39d9b/fahad-bin-kamal-anik-jNS7kDxkIyQ-unsplash.webp"
-        />
-        <meta property="og:title" content="Suicide: the Silent Pandemic." />
-        <meta
-          property="og:description"
-          content="A multidisciplinary symposium on suicide prevention."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://silentpandemic.netlify.app" />
 
         {/* og:url, og:type, og:title, og:image, og:description, fb:app_id */}
         {/* <script
