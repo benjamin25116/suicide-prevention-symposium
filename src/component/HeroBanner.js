@@ -129,10 +129,10 @@ function HomeBanner() {
             Register now
           </Button>
           <ClosingDate>
-            Registration closes on <b>23rd September, 2021</b> (Thursday) at 5PM
+            Registration closes on <b>24th September, 2021</b> (Friday) at midnight
           </ClosingDate>
         </TitleWrapper>
-        <SurTitle>Malaysia's First Multidisciplinary Symposium</SurTitle>
+        <SurTitle>Malaysia's First Multidisciplinary Symposium on Suicide Prevention</SurTitle>
         <LogoContainer>
           <Dignity src={dignity} alt="Dignity for Children Foundation logo" />
           <Masw src={masw} alt="MASW logo" />

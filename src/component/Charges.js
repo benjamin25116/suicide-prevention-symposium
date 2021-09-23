@@ -35,7 +35,7 @@ function Charges() {
           <b>Scholarships</b> are available.
         </Body>
         <Body>
-          Registration closes on <b>23rd September, 2021</b> (Thursday) at 5PM.
+          Registration closes on <b>24th September, 2021</b> (Friday) at midnight.
         </Body>
         <Button
           reverse="true"
