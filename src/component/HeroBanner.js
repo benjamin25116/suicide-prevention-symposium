@@ -76,6 +76,7 @@ const SurTitle = styled(SubHeading)`
   font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   font-size: 1.3rem;
+  line-height: 1.8rem;
   margin-bottom: 0;
 `;
 
@@ -112,6 +113,12 @@ const TitleWrapper = styled.div`
 
 const ClosingDate = styled(SurTitle)`
   margin-top: 2rem;
+
+  i {
+    font-size: 1rem;
+    display: block;
+    line-height: 1.35rem;
+  }
 `;
 
 function HomeBanner() {
@@ -129,10 +136,17 @@ function HomeBanner() {
             Register now
           </Button>
           <ClosingDate>
-            Registration closes on <b>24th September, 2021</b> (Friday) at midnight
+            Registration closes on <b>24th September, 2021</b> at midnight.
+            <br />
+            <i>
+              If you have registered but have not received the Zoom meeting
+              link, contact +6011&nbsp;3322&nbsp;4711.
+            </i>
           </ClosingDate>
         </TitleWrapper>
-        <SurTitle>Malaysia's First Multidisciplinary Symposium on Suicide Prevention</SurTitle>
+        <SurTitle>
+          Malaysia's First Multidisciplinary Symposium on Suicide Prevention
+        </SurTitle>
         <LogoContainer>
           <Dignity src={dignity} alt="Dignity for Children Foundation logo" />
           <Masw src={masw} alt="MASW logo" />

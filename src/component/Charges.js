@@ -10,6 +10,11 @@ const Body = styled.p`
   margin-bottom: 2rem;
   font-size: ${(props) => props.large && "1.5rem"};
   line-height: ${(props) => props.large && "2rem"};
+  i {
+    font-size: 1rem;
+    display: block;
+    line-height: 1.35rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -35,7 +40,12 @@ function Charges() {
           <b>Scholarships</b> are available.
         </Body>
         <Body>
-          Registration closes on <b>24th September, 2021</b> (Friday) at midnight.
+          Registration closes on <b>24th September, 2021</b> at midnight.
+          <br />
+          <i>
+            If you have registered but have not received the Zoom meeting link,
+            contact +6011&nbsp;3322&nbsp;4711.
+          </i>
         </Body>
         <Button
           reverse="true"
