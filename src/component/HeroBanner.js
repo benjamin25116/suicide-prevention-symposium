@@ -132,16 +132,12 @@ function HomeBanner() {
           </Heading>
           <SubHeading>Let’s Talk About Suicide Prevention Together</SubHeading>
           <Date>25th September 2021 • 1pm-7pm (UTC+08:00)</Date>
-          <Button to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
+          {/* <Button to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
             Register now
-          </Button>
+          </Button> */}
           <ClosingDate>
-            Registration closes on <b>24th September, 2021</b> at midnight.
-            <br />
-            <i>
-              If you have registered but have not received the Zoom meeting
-              link, contact +6011&nbsp;3322&nbsp;4711.
-            </i>
+            Registration is closed. If you have registered but have not received
+            the Zoom meeting link, contact +6011&nbsp;3322&nbsp;4711.
           </ClosingDate>
         </TitleWrapper>
         <SurTitle>

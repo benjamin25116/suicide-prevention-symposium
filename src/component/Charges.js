@@ -40,19 +40,15 @@ function Charges() {
           <b>Scholarships</b> are available.
         </Body>
         <Body>
-          Registration closes on <b>24th September, 2021</b> at midnight.
-          <br />
-          <i>
-            If you have registered but have not received the Zoom meeting link,
-            contact +6011&nbsp;3322&nbsp;4711.
-          </i>
+          Registration is closed. If you have registered but have not received
+          the Zoom meeting link, contact +6011&nbsp;3322&nbsp;4711.
         </Body>
-        <Button
+        {/* <Button
           reverse="true"
           to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true"
         >
           Register now
-        </Button>
+        </Button> */}
       </Wrapper>
     </Layout>
   );
