@@ -39,10 +39,7 @@ function Charges() {
           person (not applicable for certification and CPD points).{" "}
           <b>Scholarships</b> are available.
         </Body>
-        <Body>
-          Registration is closed. If you have registered but have not received
-          the Zoom meeting link, contact +6011&nbsp;3322&nbsp;4711.
-        </Body>
+        <Body>Registrations are closed.</Body>
         {/* <Button
           reverse="true"
           to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true"

@@ -135,10 +135,10 @@ function HomeBanner() {
           {/* <Button to="https://docs.google.com/forms/d/1Gor9GLP3zl1U6E511VELNswsavxRGCGGKBmZ-IP_Jy0/formrestricted?edit_requested=true">
             Register now
           </Button> */}
-          <ClosingDate>
+          {/* <ClosingDate>
             Registration is closed. If you have registered but have not received
             the Zoom meeting link, contact +6011&nbsp;3322&nbsp;4711.
-          </ClosingDate>
+          </ClosingDate> */}
         </TitleWrapper>
         <SurTitle>
           Malaysia's First Multidisciplinary Symposium on Suicide Prevention
